@@ -22,15 +22,19 @@
 
 nav {
   text-align: left;
-  padding: 30px;
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgb(46, 29, 204);
+  margin: -10px;
+  margin-bottom: 50px;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
 }
 
 nav a.router-link-exact-active {
-  color: #009be2;
+  color: rgb(91, 195, 241);
 }
 </style>

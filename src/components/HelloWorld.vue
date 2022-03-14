@@ -54,6 +54,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: rgb(91, 195, 241);
 }
 </style>
