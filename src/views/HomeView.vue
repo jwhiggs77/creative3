@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="https://www.shrewsburyfamilychiropractic.com/wp-content/uploads/2020/07/Shape.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/March_Madness_logo.svg/1200px-March_Madness_logo.svg.png">
+    <HelloWorld msg="Welcome to March Maddness Stat Finder"/>
   </div>
 </template>
 
