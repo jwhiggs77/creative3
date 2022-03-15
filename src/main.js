@@ -9,7 +9,16 @@ Vue.config.productionTip = false
 Vue.component('FooterComponent', footer)
 
 let data = {
-  teams: mock
+  teams: mock,
+  chosenTeam: {
+    id: 0,
+    name: String,
+    record: String,
+    conference: String,
+    city: String,
+    state: String,
+    image: String
+  }
 }
 
 new Vue({

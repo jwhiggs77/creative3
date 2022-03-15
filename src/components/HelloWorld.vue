@@ -12,7 +12,12 @@
     <h3>UCLA</h3>
     <p>With 11 national titles, UCLA has the record for the most NCAA Men's Division I Basketball</p>
     <img alt="UCLA logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/UCLA_Bruins_logo.svg/2560px-UCLA_Bruins_logo.svg.png" style="height: 200px">
-    <h3>My Predicted Winner</h3>
+    <h2>Who Do You Think Will Win This Year?</h2>
+    <h3 v-if="this.$root.$data.chosenTeam.id === 0">Navigate to the Teams Page to pick a Predicted Winner</h3>
+    <div v-else>
+      <h3>You Picked: {{ predictedWinner }}</h3>
+      <img id="chosenTeamImage" :src=this.$root.$data.chosenTeam.image>
+    </div>
   </div>
 </template>
 
@@ -21,7 +26,13 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+  data() {
+    return {
+      predictedWinner: this.$root.$data.chosenTeam.name
+    }
+  },
+
 }
 </script>
 
@@ -46,5 +57,9 @@ li {
 }
 a {
   color: rgb(39, 92, 178);
+}
+
+#chosenTeamImage {
+  height: 200px;
 }
 </style>
